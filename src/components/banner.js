@@ -42,6 +42,9 @@ const Banner = () => {
           <div className="side-img right">
             <Img fluid={data.powder.childImageSharp.fluid} />
           </div>
+          <a href="#" className="btn btn-grey btn-animated">
+            Projects
+          </a>
         </div>
         <div className="scroll">
           {/* <span>Scroll Down</span> */}

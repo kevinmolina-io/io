@@ -4,6 +4,7 @@ $font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 // Colors
 $white: #fff;
 $black: #000;
+$grey: rgb(121, 109, 109);
 $maroon: #83333e;
 $off-white: #f2f4f5;
 
@@ -77,6 +78,7 @@ header {
   height: 100vh;
   .row {
     position: relative;
+    text-align: center;
     .main-text {
       font-size: 5.8rem;
       text-transform: uppercase;
@@ -117,6 +119,18 @@ header {
       }
     }
 
+    @keyframes moveInBottom {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(-55px);
+      }
+    }
+
     .main-image {
       width: 555px;
       margin: 0 auto;
@@ -138,6 +152,59 @@ header {
         right: 168px;
         bottom: 12px;
       }
+    }
+    .btn:link,
+    .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      transform: translateY(-55px);
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative;
+    }
+
+    .btn:hover {
+      transform: translateY(-58px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(-56px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-grey {
+      background-color: $grey;
+      color: $white;
+    }
+
+    .btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+    }
+
+    .btn-grey::after {
+      background-color: $grey;
+    }
+
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+
+    .btn-animated {
+      animation: moveInBottom 1s ease-out .75s;
+      animation-fill-mode: backwards;
     }
   }
   .scroll {

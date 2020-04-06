@@ -95,11 +95,28 @@ header {
       text-align: center;
       mix-blend-mode: difference;
       z-index: 9;
+      // animation
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
       @media (max-width: 1440px) {
         font-size: 4.4rem;
         letter-spacing: 36px;
       }
     }
+
+    @keyframes moveInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
+    }
+
     .main-image {
       width: 555px;
       margin: 0 auto;

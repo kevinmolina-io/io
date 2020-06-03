@@ -14,6 +14,7 @@
   &:hover {
     transform: translateY(-58px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: $maroon;
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -26,12 +27,12 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 
-  &-grey {
-    background-color: $grey;
+  &-maroon {
+    background-color: $dark-maroon;
     color: $white;
 
     &::after {
-      background-color: $grey;
+      background-color: $dark-maroon;
     }
   }
 

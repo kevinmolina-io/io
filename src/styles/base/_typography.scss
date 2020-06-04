@@ -23,3 +23,21 @@ body {
     -o-transform: skewY(2deg) skewX(15deg) scale(1.1);
   }
 }
+
+.heading-tertiary {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, $dark-maroon, $maroon);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 5px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.25;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

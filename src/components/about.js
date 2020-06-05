@@ -1,5 +1,8 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+
+import apple from "../images/apple.jpg"
+import code from "../images/code.jpg"
+import grad from "../images/grad.jpg"
 
 const About = () => {
   return (
@@ -12,7 +15,7 @@ const About = () => {
         <div className="grid-row">
           <div className="col-1-of-2">
             <h3 className="heading-tertiary u-margin-bottom-small">
-              Tech Support &#8594; Code afficionado
+              Tech Support &rarr; Code aficionado
             </h3>
             <p className="paragraph">
               Former Apple Genius with 6+ years of Technical Support Experience
@@ -32,10 +35,28 @@ const About = () => {
               underrepresented minorities in tech.
             </p>
             <a className="btn-text" href="#">
-              Resume &#8594;
+              Resume &rarr;
             </a>
           </div>
-          <div className="col-1-of-2">Image Compo</div>
+          <div className="col-1-of-2">
+            <div className="composition">
+              <img
+                src={apple}
+                alt="apple"
+                className="composition__photo composition__photo--p1"
+              ></img>
+              <img
+                src={code}
+                alt="code"
+                className="composition__photo composition__photo--p2"
+              ></img>
+              <img
+                src={grad}
+                alt="graduate"
+                className="composition__photo composition__photo--p3"
+              ></img>
+            </div>
+          </div>
         </div>
       </section>
     </main>

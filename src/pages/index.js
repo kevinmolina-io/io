@@ -6,7 +6,6 @@ import "../styles/styles.scss"
 // Components import
 import Header from "../components/header"
 import Banner from "../components/banner"
-import Projects from "../components/projects"
 import About from "../components/about"
 
 const IndexPage = () => (

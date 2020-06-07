@@ -19,13 +19,12 @@ const About = () => {
             </h3>
             <p className="paragraph">
               Former Apple Genius with 6+ years of Technical Support Experience
-              who had to the opportunity to work as a Technical Program
-              Specialist at Apple Corporate, where I had exposure to the
-              software development life cycle. From there, I took the leap of
-              faith and went to school to pursue a Bachelor's in Computer
-              Science. Now I spend my time building progressive web apps,
-              designing and building intuitive UIs with a focus on Component API
-              design.
+              who had to the opportunity to work with a Program Management Team
+              at Apple Corporate, where I had exposure to the software
+              development life cycle. From there, I took the leap of faith and
+              went to school to pursue a Bachelor's in Computer Science. Now I
+              spend my time building progressive web apps, designing and
+              building intuitive UIs with a focus on Component API design.
             </p>
             <h3 className="heading-tertiary u-margin-bottom-small">Mission</h3>
             <p className="paragraph">

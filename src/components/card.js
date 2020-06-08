@@ -1,10 +1,8 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
-import aimac from "../images/AIMAC.png"
-import calcurack from "../images/CalcuRack.png"
-import phocial from "../images/Phocial.png"
+import Img from "gatsby-image"
+import javascript from "../javascript.svg"
+import jquery from "../jquery.svg"
 
 const Card = props => {
   return (
@@ -12,9 +10,24 @@ const Card = props => {
       <div className="card__side card__side--front">
         {/* <img src={require(props.image)} className="project__photo"></img> */}
         <Img fluid={props.image} />
-        <div className="card__side card__side--back">Backside</div>
       </div>
-      <div className="card__side card__side--back">Backside</div>
+      <div className="card__side card__side--back card__side--back-1">
+        <h4 className="card__heading">{props.title}</h4>
+        <h3 className="card__details">
+          Details
+          <ul>
+            <li>
+              <div className="skills">
+                {props.logos.map(logo => (
+                  <img className="logos" src={logo} />
+                ))}
+
+                {/* <img className="logos" src={jquery} alt="JavaScript Logo" /> */}
+              </div>
+            </li>
+          </ul>
+        </h3>
+      </div>
     </div>
   )
 }

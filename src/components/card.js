@@ -1,8 +1,8 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Img from "gatsby-image"
-import javascript from "../javascript.svg"
-import jquery from "../jquery.svg"
+import github from "../github.svg"
 
 const Card = props => {
   return (
@@ -13,20 +13,22 @@ const Card = props => {
       </div>
       <div className="card__side card__side--back card__side--back-1">
         <h4 className="card__heading">{props.title}</h4>
-        <h3 className="card__details">
-          Details
-          <ul>
-            <li>
-              <div className="skills">
-                {props.logos.map(logo => (
-                  <img className="logos" src={logo} />
-                ))}
+        <p className="paragraph paragraph--projects">{props.summary}</p>
 
-                {/* <img className="logos" src={jquery} alt="JavaScript Logo" /> */}
-              </div>
-            </li>
-          </ul>
-        </h3>
+        <div className="details__container">
+          {/* <h3 className="card__details">Tech Stack</h3> */}
+
+          <div className="skills">
+            {props.logos.map(logo => (
+              <img className="logos" src={logo} alt="" />
+            ))}
+          </div>
+          <div>
+            <a className="btn-link" href={props.repo}>
+              <img className="repo" src={github} />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -43,6 +43,13 @@ const Projects = () => {
   const project2 = [jquery, d3, javascript, css3]
   const project3 = [cplusplus]
 
+  const repos = ["", "https://github.com/kame087/barbell-calculator", "#"]
+  const summaries = [
+    "A Full-stack web app that allows users to upload digital media and interact with other users.",
+    "Mobile Web app that calculates which plates to use to rack up barbell weight.",
+    "AI CLI that triages most common mac issues based on user input.",
+  ]
+
   return (
     <section className="section-projects" id="projects">
       <div className="u-center-text u-margin-bottom-big">
@@ -53,14 +60,18 @@ const Projects = () => {
           <Card
             image={data.phocial.childImageSharp.fluid}
             title={"Phocial"}
+            summary={summaries[0]}
             logos={project1}
+            repo={repos[0]}
           />
         </div>
         <div className="col-1-of-2">
           <Card
             image={data.calcurack.childImageSharp.fluid}
             title={"CalcuRack"}
+            summary={summaries[1]}
             logos={project2}
+            repo={repos[1]}
           />
         </div>
       </div>
@@ -69,7 +80,9 @@ const Projects = () => {
           <Card
             image={data.aimac.childImageSharp.fluid}
             title={"AI Mac Diags"}
+            summary={summaries[2]}
             logos={project3}
+            repo={repos[2]}
           />
         </div>
         <div className="col-1-of-2"></div>

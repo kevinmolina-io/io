@@ -16,7 +16,6 @@
     -webkit-backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color: $black, $alpha: 0.35);
-    text-align: center;
 
     &--front {
       background-color: $white;
@@ -80,14 +79,24 @@ li {
   list-style: none;
 }
 
-.skills {
+.details__container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.skills {
+  display: flex;
+  border-bottom: solid 1px $black;
 }
 
 .logos {
   height: 30px;
-  padding: 10px 10px;
-  color: $white;
+  padding: 10px 10px 15px 10px;
+}
+
+.repo {
+  height: 30px;
+  padding: 20px 10px 15px 10px;
+  border-bottom: solid 1px $black;
 }

@@ -40,4 +40,8 @@ body {
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  &--projects {
+    color: $white;
+  }
 }

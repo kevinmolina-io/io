@@ -74,7 +74,10 @@ const Projects = () => {
             repo={repos[1]}
           >
             <div>
-              <a className="project__children" href="#">
+              <a
+                className="project__children"
+                href="https://kame087.github.io/barbell-calculator/"
+              >
                 Visit Live
               </a>
             </div>

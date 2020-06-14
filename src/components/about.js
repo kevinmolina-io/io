@@ -24,16 +24,20 @@ const About = () => {
               development life cycle. From there, I took the leap of faith and
               went to school to pursue a Bachelor's in Computer Science. Now I
               spend my time building progressive web apps, designing and
-              building intuitive UIs with a focus on Component API design.
+              building intuitive UIs looking to kickstart my professional
+              career.
             </p>
             <h3 className="heading-tertiary u-margin-bottom-small">Mission</h3>
             <p className="paragraph">
               As a Latino in Software Engineering, my goal is to be a champion
-              of inclusion and build a community that provides resources for my
-              community and encourage for more representation of
-              underrepresented minorities in tech.
+              of inclusion and build a community that builds and provides
+              resources for my community and encourage for more representation
+              of underrepresented minorities in tech.
             </p>
-            <a className="btn-text" href="#">
+            <a
+              className="btn-text"
+              href="https://drive.google.com/file/d/1X9daMEddkWCfeZM3ao1YSOmSKtRHKCsj/view"
+            >
               Resume &rarr;
             </a>
           </div>

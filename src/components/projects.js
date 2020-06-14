@@ -46,8 +46,8 @@ const Projects = () => {
   const repos = ["", "https://github.com/kame087/barbell-calculator", "#"]
   const summaries = [
     "A Full-stack web app that allows users to upload digital media and interact with other users.",
-    "Mobile Web app that calculates which plates to use to rack up barbell weight.",
-    "AI CLI that triages most common mac issues based on user input.",
+    "Mobile calculating visualizer that determines miminum number of plates needed to achieve given total weight.",
+    "Deterministic triage tool that assists tech support in diagnosing most common Mac issues.",
   ]
 
   return (
@@ -72,7 +72,13 @@ const Projects = () => {
             summary={summaries[1]}
             logos={project2}
             repo={repos[1]}
-          />
+          >
+            <div>
+              <a className="project__children" href="#">
+                Visit Live
+              </a>
+            </div>
+          </Card>
         </div>
       </div>
       <div className="grid-row">

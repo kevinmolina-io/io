@@ -13,7 +13,7 @@ const Card = props => {
       </div>
       <div className="card__side card__side--back card__side--back-1">
         <h4 className="card__heading">{props.title}</h4>
-        <p className="paragraph paragraph--projects">{props.summary}</p>
+        <p className="paragraph--projects">{props.summary}</p>
 
         <div className="details__container">
           {/* <h3 className="card__details">Tech Stack</h3> */}
@@ -23,11 +23,12 @@ const Card = props => {
               <img className="logos" src={logo} alt="" />
             ))}
           </div>
-          <div>
-            <a className="btn-link" href={props.repo}>
+          <div className="btn-link">
+            <a href={props.repo}>
               <img className="repo" src={github} />
             </a>
           </div>
+          <div>{props.children}</div>
         </div>
       </div>
     </div>

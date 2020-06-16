@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Img from "gatsby-image"
 import github from "../github.svg"
@@ -20,7 +19,11 @@ const Card = props => {
 
           <div className="skills">
             {props.logos.map(logo => (
-              <img className="logos" src={logo} alt="" />
+              <img
+                className="logos"
+                src={logo}
+                alt="Programming Language logo"
+              />
             ))}
           </div>
           <div className="btn-link">

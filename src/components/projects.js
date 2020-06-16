@@ -75,7 +75,7 @@ const Projects = () => {
           >
             <div>
               <a
-                className="project__children"
+                className="btn-projects"
                 href="https://kame087.github.io/barbell-calculator/"
               >
                 Visit Live

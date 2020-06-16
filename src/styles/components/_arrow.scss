@@ -1,0 +1,35 @@
+.arrow {
+  position: relative;
+  width: 42px;
+  height: 16px;
+  opacity: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 21px;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  &::before {
+    transform: rotate(45deg) translateX(25%);
+  }
+
+  &::after {
+    transform: rotate(-45deg) translateX(-25%);
+  }
+
+  &:nth-child(1) {
+    top: -50px;
+    opacity: 1;
+    animation: arrow2 1s ease 0s infinite;
+  }
+
+  &:nth-child(2) {
+    top: -25px;
+    animation: arrow1 1s ease 0.25s infinite;
+  }
+}

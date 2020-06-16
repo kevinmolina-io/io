@@ -1,0 +1,116 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 31rem;
+
+  &__side {
+    background-color: $white;
+    height: 31rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color: $black, $alpha: 0.35);
+
+    &--front {
+      background-color: $white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      text-align: center;
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $tiffany,
+          $tiffany-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+  }
+
+  // Back Side Styling
+  &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $black, $grey);
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__details {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+.project__photo {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.paragraph--projects {
+  padding: 0 20px;
+  margin: 10px 20px;
+  font-size: $default-font-size;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  background-image: linear-gradient(to right, $black, $grey);
+  background-clip: text;
+  color: transparent;
+}
+
+.details__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills {
+  display: flex;
+  border-bottom: solid 1px $black;
+}
+
+.logos {
+  height: 30px;
+  padding: 10px 10px 15px 10px;
+}
+
+.repo {
+  margin: 20px 10px 10px 10px;
+  height: 30px;
+  // padding: 20px 10px 15px 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px $black;
+}

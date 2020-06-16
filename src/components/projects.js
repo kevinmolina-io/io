@@ -43,7 +43,11 @@ const Projects = () => {
   const project2 = [jquery, d3, javascript, css3]
   const project3 = [cplusplus]
 
-  const repos = ["", "https://github.com/kame087/barbell-calculator", "#"]
+  const repos = [
+    "https://github.com/kame087/myJourney",
+    "https://github.com/kame087/barbell-calculator",
+    "#",
+  ]
   const summaries = [
     "A Full-stack web app that allows users to upload digital media and interact with other users.",
     "Mobile calculating visualizer that determines miminum number of plates needed to achieve given total weight.",

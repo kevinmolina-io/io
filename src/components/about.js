@@ -6,7 +6,7 @@ import grad from "../images/grad.jpg"
 
 const About = () => {
   return (
-    <main>
+    <main id="about">
       <section className="section-about">
         <div className="u-center-text u-margin-bottom-big">
           <h2 className="heading-secondary">A bit about myself</h2>
